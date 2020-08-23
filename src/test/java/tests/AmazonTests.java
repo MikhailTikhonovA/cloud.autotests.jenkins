@@ -15,7 +15,7 @@ public class AmazonTests {
 
     @Test
     public void testEmptyCartUnregisterUser() {
-        Assert.check(true);
+        Assertions.assertEquals(5,5);
 //        open("https://www.amazon.com");
 //
 //        $("#nav-cart").click();
