@@ -1,8 +1,9 @@
 package tests;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 @Tag("AmazonCartTests")
@@ -10,7 +11,7 @@ public class AmazonTests {
 
     @Test
     public void simpleTest() {
-        Assertions.assertEquals(5, 5);
+        assertEquals(5, 5);
     }
 
     @Test
@@ -18,7 +19,7 @@ public class AmazonTests {
         String b = System.getProperty("apple");
         String expected = "apple";
 
-        Assertions.assertEquals(expected, b);
+        assertEquals(expected, b);
     }
 
     @Test
@@ -26,6 +27,6 @@ public class AmazonTests {
         Double b = Double.parseDouble(System.getProperty("number"));
         Double expected = 5.0;
 
-        Assertions.assertEquals(expected, b);
+        assertEquals(expected, b);
     }
 }
