@@ -9,21 +9,23 @@ import org.junit.jupiter.api.Test;
 public class AmazonTests {
 
     @Test
-    public void testEmptyCartUnregisterUser() {
+    public void simpleTest() {
         Assertions.assertEquals(5, 5);
-//        open("https://www.amazon.com");
-//
-//        $("#nav-cart").click();
-//
-//        $(".a-row.sc-your-amazon-cart-is-empty").shouldHave(text("Your Amazon Cart is empty"));
     }
 
     @Test
-    public void testCartUnregisterUser() {
-        Assertions.assertEquals(5, 5);
-//        open("https://www.amazon.com");
-//
-//        $("#nav-cart").shouldHave(text("Cart"));
+    public void parametrizedStringTest() {
+        String b = System.getProperty("apple");
+        String expected = "apple";
+
+        Assertions.assertEquals(expected, b);
     }
 
+    @Test
+    public void parametrizedIntTest() {
+        int b = Integer.parseInt(System.getProperty("number"));
+        int expected = 5 ;
+
+        Assertions.assertEquals(expected, b);
+    }
 }

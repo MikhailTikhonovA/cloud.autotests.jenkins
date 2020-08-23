@@ -24,6 +24,11 @@ task AmazonTests(type: Test){
     }
 }
 
+tasks.withType(Test){
+    systemProperties = System.properties
+}
+
 test {
     useJUnitPlatform()
+    systemProperty "username", findProperty("username")
 }
