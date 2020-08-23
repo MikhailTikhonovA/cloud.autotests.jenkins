@@ -23,8 +23,8 @@ public class AmazonTests {
 
     @Test
     public void parametrizedIntTest() {
-        String b = System.getProperty("number");
-        String expected = "5";
+        Double b = Double.parseDouble(System.getProperty("number"));
+        Double expected = 5.0;
 
         Assertions.assertEquals(expected, b);
     }
