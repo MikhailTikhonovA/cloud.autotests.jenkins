@@ -20,7 +20,7 @@ dependencies {
 
 task AmazonTests(type: Test){
     useJUnitPlatform{
-         includeTags 'AmazonCartTest'
+         includeTags 'AmazonCartTests'
     }
 }
 
