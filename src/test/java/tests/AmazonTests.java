@@ -16,7 +16,7 @@ public class AmazonTests {
 
     @Test
     public void parametrizedStringTest() {
-        String b = System.getProperty("apple");
+        String b = System.getProperty("item");
         String expected = "apple";
 
         assertEquals(expected, b);
